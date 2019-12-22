@@ -10,6 +10,11 @@ def index(request):
     return render(request, 'index.html', {'orders': orders})
 
 @login_required
+def index1(request):
+    orders = Order.objects.all()
+    return render(request, 'index1.html', {'orders': orders})
+
+@login_required
 def show(request, order_id):
     order = Order.objects.filter(id=order_id)
     return render(request, 'show.html', {'order': order})

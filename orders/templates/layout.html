@@ -1,9 +1,9 @@
-{% load staticfiles %}
+{% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>{% block title %} {% endblock %} | DjangoOMS</title>
+		<title>{% block title %} {% endblock %} | OrderManager</title>
 
 		<!-- BEGIN META -->
 		<meta charset="utf-8">
@@ -30,6 +30,7 @@
 		<script type="text/javascript" src="../../assets/js/libs/utils/html5shiv.js?1403934957"></script>
 		<script type="text/javascript" src="../../assets/js/libs/utils/respond.min.js?1403934956"></script>
 		<![endif]-->
+
 	</head>
 	<body class="menubar-pin menubar-hoverable header-fixed "> <!--max sidemenu: menubar-pin -->
 
@@ -42,7 +43,7 @@
 						<li class="header-nav-brand" >
 							<div class="brand-holder">
 								<a href="{% url 'home' %}">
-									<span class="text-lg text-light text-danger">INFORTECH</span><span class="text-lg text-bold text-primary"> SOLUTIONS</span>
+									<span class="text-lg text-light text-danger">OrderManager</span><span class="text-lg text-bold text-primary"></span>
 								</a>
 							</div>
 						</li>
@@ -59,7 +60,7 @@
 						<li class="dropdown">
 							<a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
 								<span class="profile-info">
-									<h4 class="text-lg text-bold text-primary">DjangoOMS Application</h4>
+									<h4 class="text-lg text-bold text-primary">OrderManager</h4>
 								</span>
 							</a>
 							<ul class="dropdown-menu animation-dock">
@@ -72,6 +73,7 @@
 					</ul><!--end .header-nav-profile -->
 				</div><!--end #header-navbar-collapse -->
 			</div>
+
 		</header>
 		<!-- END HEADER-->
 
@@ -177,7 +179,7 @@
 
 					<div class="menubar-foot-panel">
 						<small class="no-linebreak hidden-folded">
-							<span class="opacity-75">Copyright &copy; {% now "Y" %}</span> <strong>INFTECH Solutions</strong>
+							<span class="opacity-75">Copyright &copy; {% now "Y" %}</span> <strong>OrderManager</strong>
 						</small>
 					</div>
 				</div><!--end .menubar-scroll-panel-->
@@ -207,7 +209,7 @@
 		<script src="{% static 'js/core/AppVendor.js' %}"></script>
 		<script src="{% static 'js/core/Demo.js' %}"></script>
         <script src="{% static 'js/core/DemoTableDynamic.js' %}"></script>
-        <script src="{% static 'js/libs/select2/select2.min.js' %}"></script>
+		<script src="{% static 'js/libs/select2/select2.min.js' %}"></script>
 		<!-- END JAVASCRIPT -->
 
         <script>
